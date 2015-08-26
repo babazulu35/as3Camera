@@ -1,5 +1,5 @@
 ﻿package  {
-	// Yazan Çizen Hakan Hürriyet
+	// @author Hakan Hürriyet
 	import flash.display.MovieClip;
 	import flash.net.NetConnection;
 	import flash.net.NetStream;
@@ -30,7 +30,7 @@
 			
 			
 			xmlLoader.addEventListener(Event.COMPLETE,xmlLoaded);
-			xmlLoader.load(new URLRequest("http://95.0.143.215/goruntu999.xml"));
+			xmlLoader.load(new URLRequest("http://xx.xx.xx.xx/yourXmlFile.xml"));
 			sesiKes(0);
 		}
 		function yayiniDurumu(yayinDurumDeger:Number)
@@ -43,7 +43,7 @@
 		
 		function xmlLoaded(e:Event):void {
 			xml = new XML(e.target.data);
-			//rtmp://128.199.51.114/ist2_16
+			
 			trace(xml.fmsadresi[3]);
 			if(yayiniDurumu(xml.fmsadresi[3]) == int(0))
 			{
